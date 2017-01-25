@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Itunes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="itunes-service.js"></script>
+    <script src="app.js"></script>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <img id="mainImage" src="iTunes_logo_black.png"  alt="" class="img-responsive center-block spacer">
+                    <form id="mainSearch" class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
+                        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row spacer-small">
+                <div class="col-md-6 col-md-offset-3" id="song-list">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
