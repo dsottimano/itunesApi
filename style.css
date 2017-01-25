@@ -1,6 +1,7 @@
 .shrink {
 height:10%;
 width:60%;
+transition: all 2s linear;
 
 
 }
